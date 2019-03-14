@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Alerts" max_length="40" name="x_319362_employeer_alerts" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Message" max_length="40" name="a_message" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" max_length="40" name="a_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Expiration Time" max_length="40" name="a_time" type="glide_date_time"/>
+    </element>
+</database>

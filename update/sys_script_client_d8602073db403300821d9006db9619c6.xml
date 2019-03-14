@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Display Msg</description>
+        <field>u_age</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages>After leave approval display msg for 2 hrs.</messages>
+        <name>Display message if leave &lt; 2Hrs</name>
+        <order/>
+        <script><![CDATA[ function onLoad() {
+   //Type appropriate comment here, and begin script below
+   var ga = new GlideAjax('GetDateTime');
+	ga.addParam('sysparm_name','getDateTime');
+	ga.addParam('sysparm_username',g_form.getValue('u_name'));
+	ga.getXML(callback);
+	
+}
+
+function callback(ajaxResponse){
+	var answer1 =ajaxResponse.responseXML.getElementsByTagName("result");
+	var msg = answer1[0].getAttribute("msg");
+	if(msg != 'NaN'){
+		g_form.addInfoMessage(msg);
+	}
+	else{
+		g_form.clearMessages();
+	}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-14 08:46:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d8602073db403300821d9006db9619c6</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Display message if leave &lt; 2Hrs</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="EmployeeRequest" source="x_319362_employeer">0c52bdc3db003300821d9006db96194c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EmployeeRequest">0c52bdc3db003300821d9006db96194c</sys_scope>
+        <sys_update_name>sys_script_client_d8602073db403300821d9006db9619c6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-14 09:13:24</sys_updated_on>
+        <table>x_319362_employeer_employee</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

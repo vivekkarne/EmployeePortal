@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_script_action">
+    <sysevent_script_action action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition_script/>
+        <description/>
+        <event_name>x_319362_employeer.displayHours</event_name>
+        <name>Pick up event triggered</name>
+        <order>100</order>
+        <script><![CDATA[var gr=new GlideRecord('x_319362_employeer_alerts');
+gr.addQuery('a_name',current.name);
+gr.query();
+if(gr.next()){
+	gr.setValue('a_message','Your Leave has been approved.');
+	gr.setValue('a_time',event.parm1);
+	gr.update();
+}
+else
+	{
+		gr.setValue('a_name',current.name);
+		gr.setValue('a_message','Your Leave has been approved.');
+		gr.setValue('a_time',event.parm1);
+		gr.insert();
+	}]]></script>
+        <synchronous>false</synchronous>
+        <sys_class_name>sysevent_script_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-13 06:44:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0597fed3db4c3300821d9006db96192b</sys_id>
+        <sys_mod_count>25</sys_mod_count>
+        <sys_name>Pick up event triggered</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="EmployeeRequest" source="x_319362_employeer">0c52bdc3db003300821d9006db96194c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EmployeeRequest">0c52bdc3db003300821d9006db96194c</sys_scope>
+        <sys_update_name>sysevent_script_action_0597fed3db4c3300821d9006db96192b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-13 12:38:44</sys_updated_on>
+    </sysevent_script_action>
+</record_update>

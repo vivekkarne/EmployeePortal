@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Leaves" max_length="40" name="x_319362_employeer_leaves" type="collection">
+        <element label="Age" max_length="40" name="age" type="integer"/>
+        <element label="Email" max_length="100" name="email" type="string"/>
+        <element label="Manager" max_length="40" name="manager" reference="sys_user" type="reference"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element choice="1" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Approved" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Requested" sequence="1" value="0"/>
+                <element inactive_on_update="false" label="Rejected" sequence="2" value="-1"/>
+            </choice>
+        </element>
+    </element>
+</database>

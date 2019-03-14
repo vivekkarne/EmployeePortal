@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Employee" max_length="40" name="x_319362_employeer_employee" type="collection">
+        <element default="0" label="Leaves Taken" max_length="40" name="leaves_taken" type="integer"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Age" mandatory="true" max_length="40" name="u_age" type="integer"/>
+        <element label="Bonus" max_length="40" name="u_bonus" type="float"/>
+        <element label="Email" max_length="100" name="u_email" type="string"/>
+        <element label="Is manager" max_length="40" name="u_ismanager" type="boolean"/>
+        <element label="Manager" max_length="32" name="u_manager" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" mandatory="true" max_length="40" name="u_name" type="string" unique="true"/>
+        <element label="Salary" max_length="40" name="u_salary" type="float"/>
+        <index name="index">
+            <element name="u_name"/>
+        </index>
+        <index name="index2">
+            <element name="u_manager"/>
+        </index>
+        <index name="index3">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <description/>
+        <event_name>x_319362_employeer.displayHours</event_name>
+        <fired_by/>
+        <queue/>
+        <suffix>displayHours</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 16:53:55</sys_created_on>
+        <sys_id>1aacfb07db843300821d9006db96192b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_319362_employeer.displayHours</sys_name>
+        <sys_package display_value="EmployeeRequest" source="x_319362_employeer">0c52bdc3db003300821d9006db96194c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EmployeeRequest">0c52bdc3db003300821d9006db96194c</sys_scope>
+        <sys_update_name>sysevent_register_1aacfb07db843300821d9006db96192b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 16:53:55</sys_updated_on>
+        <table>x_319362_employeer_leaves</table>
+    </sysevent_register>
+</record_update>

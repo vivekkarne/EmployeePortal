@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="state" label="State" language="en" table="x_319362_employeer_leaves">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <help/>
+            <hint/>
+            <label>State</label>
+            <language>en</language>
+            <name>x_319362_employeer_leaves</name>
+            <plural>States</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-03-12 12:26:56</sys_created_on>
+            <sys_id>51cf320fdbc03300821d9006db9619bc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>State</sys_name>
+            <sys_package display_value="EmployeeRequest" source="x_319362_employeer">0c52bdc3db003300821d9006db96194c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="EmployeeRequest">0c52bdc3db003300821d9006db96194c</sys_scope>
+            <sys_update_name>sys_documentation_x_319362_employeer_leaves_state_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-03-12 12:26:56</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

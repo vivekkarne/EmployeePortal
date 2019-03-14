@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>u_bonus</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 10:49:50</sys_created_on>
+        <sys_id>ff79268bdb803300821d9006db9619a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_bonus</sys_name>
+        <sys_package display_value="EmployeeRequest" source="x_319362_employeer">0c52bdc3db003300821d9006db96194c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EmployeeRequest">0c52bdc3db003300821d9006db96194c</sys_scope>
+        <sys_update_name>sys_ui_policy_action_ff79268bdb803300821d9006db9619a4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 10:49:50</sys_updated_on>
+        <table>x_319362_employeer_employee</table>
+        <ui_policy display_value="Bonus Field is displayed only for managers">d469a28bdb803300821d9006db9619f7</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+</record_update>

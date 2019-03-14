@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_319362_employeer.GetDateTime</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>GetDateTime</name>
+        <script><![CDATA[var GetDateTime = Class.create();
+GetDateTime.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {				
+	getDateTime: function() {
+		var result=this.newItem("result");
+		var gt=new GlideDateTime();
+		var userRec=new GlideRecord('x_319362_employeer_alerts');
+		userRec.get('a_name',this.getParameter('sysparm_username'));
+		if(userRec.getRowCount()>0){
+		var gt1=new GlideDateTime(userRec.getValue('a_time'));
+		if(gt.onOrBefore(gt1)){
+		result.setAttribute("msg","Leave has been approved.");
+		}
+		else{
+			result.setAttribute("msg","NaN");
+		}
+		}
+		else{
+			result.setAttribute("msg","NaN");
+		}
+	},
+    type: 'GetDateTime'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-14 08:47:04</sys_created_on>
+        <sys_id>19406073db403300821d9006db9619c2</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>GetDateTime</sys_name>
+        <sys_package display_value="EmployeeRequest" source="x_319362_employeer">0c52bdc3db003300821d9006db96194c</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="EmployeeRequest">0c52bdc3db003300821d9006db96194c</sys_scope>
+        <sys_update_name>sys_script_include_19406073db403300821d9006db9619c2</sys_update_name>
+        <sys_updated_by>fred.luddy</sys_updated_by>
+        <sys_updated_on>2019-03-14 10:35:34</sys_updated_on>
+    </sys_script_include>
+</record_update>
